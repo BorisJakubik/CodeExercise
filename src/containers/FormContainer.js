@@ -15,12 +15,11 @@ export class FormContainer extends Component {
 
     handleChange = (event) => {
         const { name, value } = event.target;
-        this.setState({ [name]: value})
+        this.setState({ [name]: value});
     }
 
     handleSubmit = () => {
         alert('Form submited!');
-        this.setState({ name: '', email: '', subject: ''});
     }
 
     validate = () => {
@@ -34,8 +33,7 @@ export class FormContainer extends Component {
             <FormContext.Provider
                 value={{
                     state: this.state,
-                    handleChange:
-                    this.handleChange,
+                    handleChange: this.handleChange,
                     handleSubmit: this.handleSubmit,
                     valid: this.state.valid,
                     handleValidation: this.validate,

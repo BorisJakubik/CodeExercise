@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import ReactDOM from "react-dom";
 import { AppContainer } from 'react-hot-loader';
 
@@ -6,14 +6,12 @@ import { FormContainer } from './containers/FormContainer';
 
 import "./styles.css";
 
-class App extends  Component {
-  render() {
+const App = () => {
   return (
       <AppContainer>
         <FormContainer />
       </AppContainer>
-    );
-  }
+  );
 }
 
 const rootElement = document.getElementById("root");

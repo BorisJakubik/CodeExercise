@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormContext } from '../formContext';
 
-export function FormComponent() {
+export const FormComponent = () => {
     return (
         <FormContext.Consumer>
             {data => (
