@@ -6,7 +6,8 @@
       "updateTypes": ["minor", "patch", "digest"],
       "automerge": true,
       "groupName": "Minor, patch, pin and digest dependeces",
-      "groupSlug": "all-minor-patch"
+      "groupSlug": "all-minor-patch",
+      "labels": ["dependencies"]
     },
     {
       "updateTypes": ["major"],
