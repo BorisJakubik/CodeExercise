@@ -3,10 +3,14 @@
   "prConcurrentLimit": 5,
   "packageRules": [
     {
-      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "updateTypes": ["minor", "patch", "digest"],
       "automerge": true,
       "groupName": "Minor, patch, pin and digest dependeces",
       "groupSlug": "all-minor-patch"
+    },
+    {
+      "updateTypes": ["major"],
+      "enabled": false
     }
   ]
 }
