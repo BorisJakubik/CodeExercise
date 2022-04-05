@@ -1,5 +1,12 @@
 {
-  "extends": [
-    "config:base"
+  "rangeStrategy": "pin",
+  "prConcurrentLimit": 5,
+  "packageRules": [
+    {
+      "updateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
+      "groupName": "Minor, patch, pin and digest dependeces",
+      "groupSlug": "all-minor-patch"
+    }
   ]
 }
