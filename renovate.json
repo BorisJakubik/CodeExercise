@@ -1,6 +1,7 @@
 {
   "rangeStrategy": "pin",
   "prConcurrentLimit": 5,
+  "labels": ["dependencies"],
   "packageRules": [
     {
       "updateTypes": ["minor", "patch", "digest"],
